@@ -1,0 +1,77 @@
+body { 
+    background: url(img/crop.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } 
+  .chatMain{
+
+      background-color:rgb(218, 205, 205);
+  margin-top: 80px;
+  width: 1200px;
+  height: 500px;
+  margin-left: 5%;
+  position: relative;
+}
+
+ .addchat{
+background-color: cadetblue;
+height: 100%;
+width: 30%; 
+float: left;
+ }
+
+ .chatapp{
+background-color: white;
+ height: 100%;
+width: 70%; 
+float: right;
+}
+
+.profile-pic{
+  height: 40px;
+  width: 40px;
+  
+}
+
+.chatbox{
+  background-color: white;
+  width: 100%;
+  height: 77%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-size: 22px; 
+}
+
+.chattext{
+  background-color: white;
+  width: 100%;
+  height: 5%;
+  margin-top: 2px;
+}
+
+ .flotsign{
+  position: relative;
+float: right;
+} 
+.signup{
+  float: right;
+  margin-top: 10px;
+}
+
+.msg1{
+  /* color: brown; */
+list-style: none;
+float: right;
+/* padding-bottom: 10px; */
+/* background-color: red; */
+
+}
+.msg2{
+  /* color: blue; */
+  list-style: none;
+/* padding-bottom: 10px; */
+/* background-color: aqua; */
+
+}

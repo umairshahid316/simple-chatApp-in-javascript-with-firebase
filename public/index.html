@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container-fluid alin">
+        <div class="chatMain">
+             
+            <div class="addchat">
+
+
+        <div class="card">
+            <div class="card-header flotsign">
+                <div class="row">
+            <div class="col-md-2">
+                
+        <img src="img/user.png" class="profile-pic" /> 
+
+            </div>
+           
+            <div class="col-sm-7 ">
+              <h5 id="userName">Please SignUp =></h5>
+                    </div>
+
+                    <div class="col-sm-3 signup">
+                        <button id="signupBtn" onclick="signup()">SignUp</button>
+                    </div>
+          
+
+                </div>
+
+                <div class="col-md-5"></div>
+                </div>
+
+                <ul class="list-group">
+
+                </ul>
+
+        </div>
+
+
+                  </div>
+            
+                
+    <div class="chatapp">
+        <div class="card">
+                    <div class="card-header">
+                                <div class="row">
+                                    <div class="c0l-md-7">
+                                        <h2>Chat</h2>         
+                                    </div>
+                                </div>
+                     </div>
+                               
+        </div>
+        
+<!--  -->
+        <div id="chatbox" class="chatbox">
+            
+            <ul id="msg_id">
+                
+            </ul>
+
+        </div>
+
+<div class="chattext">
+
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+        <input type="text" class="form-control" disabled  placeholder="Type Message" id="sendText">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" disabled onclick="SendMsg()" type="button" id="sendBtn">SEND</button>
+        </div>
+      </div>
+
+
+
+</div>
+
+
+
+    </div>
+            
+            
+            
+            
+
+
+        </div>
+      </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAdN5O4dR83JSt1s3UExjXrtXBNy5NeYXo",
+    authDomain: "chatapp-e3115.firebaseapp.com",
+    databaseURL: "https://chatapp-e3115.firebaseio.com",
+    projectId: "chatapp-e3115",
+    storageBucket: "chatapp-e3115.appspot.com",
+    messagingSenderId: "304581529787",
+    appId: "1:304581529787:web:90f66acb20a7b89b4cd99e",
+    measurementId: "G-QCVK8B1C09"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</html>
